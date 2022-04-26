@@ -1,6 +1,7 @@
 /* 指定body为100%使之沾满整个屏幕 */
 body {
     width: 100%;
+    height: 1000px;
     /* 设置最小宽度,防止一直缩小 */
     min-width: 320px;
     /* 设置最大宽度,防止一直放大 */
@@ -10,7 +11,7 @@ body {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
-    background-color: #666;
+    background-color: #F6F6F6;
 }
 
 /* 头部的样式 */
@@ -70,6 +71,7 @@ ul {
     overflow: hidden;
     min-width: 320px;
     max-width: 640px;
+    background-color: red;
 }
 
 .search-btn {
@@ -140,4 +142,55 @@ ul {
 /* 轮播图部分 */
 .slider img {
     width: 100%;
+}
+
+/* 分类导航栏 */
+
+.nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 10px 0; */
+}
+
+.nav a img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav a p {
+    margin: 0;
+    color: #666;
+}
+
+/* 秒杀部分 */
+.second-buy {
+    width: 97%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0 20px 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.second-buy a {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.second-buy a img {
+    width: 100%;
+    /* height: 35px; */
+}
+
+.second-buy a p {
+    margin: 0;
+    color: red;
+
 }
