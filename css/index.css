@@ -1,0 +1,143 @@
+/* 指定body为100%使之沾满整个屏幕 */
+body {
+    width: 100%;
+    /* 设置最小宽度,防止一直缩小 */
+    min-width: 320px;
+    /* 设置最大宽度,防止一直放大 */
+    max-width: 640px;
+
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    background-color: #666;
+}
+
+/* 头部的样式 */
+.app {
+    height: 45px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app ul li {
+    float: left;
+    height: 45px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+}
+
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    /* 因为图片是以文字的底部为基线,所以仅仅在父元素上设置line-height不能达到垂直居中的效果 */
+    /* 使用vertical-align: middle;使图片以文字的中线为基线 */
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F64515;
+}
+
+/* 搜索栏的样式 */
+.search-wrap {
+    /* position: fixed; */
+    position: relative;
+    height: 44px;
+    width: 100%;
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 640px;
+}
+
+.search-btn {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    top: 0;
+    left: 0;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+.search-login {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    top: 0;
+    right: 0;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+/* 中间的搜索空随着屏幕的缩放而伸缩,所以上面两个图标绝对定位,搜索框不设置高度自动撑满,然后设置边距 */
+.search {
+    position: relative;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 50px;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+
+.jd-icon {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    background: url(../images/jd-icon.jpg) no-repeat;
+    background-size: 20px 15px;
+}
+
+/* JD图标后面的竖线 */
+.jd-icon::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.search-input {
+    position: absolute;
+    left: 50px;
+    top: 8px;
+    border: 0;
+    outline: none;
+
+}
+
+/* 页面主体部分 */
+
+/* 轮播图部分 */
+.slider img {
+    width: 100%;
+}
